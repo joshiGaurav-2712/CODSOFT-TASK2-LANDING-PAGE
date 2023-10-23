@@ -1,0 +1,338 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+div#main {
+    height: 100%;
+    width: 100%;
+    background-color: #D0D4D5;
+    position: relative;
+}
+
+div#nav {
+    height: 60px;
+    padding: 0px 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div#nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+div#nav img {
+    height: 35px;
+    margin-right: 170px;
+
+}
+
+div#nav1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#nav1 h4 {
+    margin-right: 60px;
+    font-size: larger;
+    text-transform: uppercase;
+}
+
+div#nav1 h4:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+div#nav2 i {
+    margin-right: 40px;
+    font-size: larger;
+
+}
+
+div#nav2 i:hover {
+    cursor: pointer;
+}
+
+div#content {
+    width: 100%;
+    height: calc(100% - 60px);
+
+    position: relative;
+    display: flex;
+}
+
+div#left {
+    height: 100%;
+    width: 50%;
+    padding: 70px 150px;
+
+
+}
+
+div#left h5 {
+    font-size: 20px;
+    color: #535353;
+
+}
+
+div#left h1 {
+    margin-top: 15px;
+    font-size: 45px;
+}
+
+div#left p {
+    margin-top: 20px;
+    font-size: 19px;
+    width: 75%;
+}
+
+div#left button {
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: black;
+    color: whitesmoke;
+    padding: 10px 20px;
+
+    transition: all ease 0.3s;
+    border: none;
+    font-weight: bolder;
+
+}
+
+div#left button:hover {
+    box-shadow: 5px 5px 10px black;
+    scale: 0.9;
+}
+
+div#right {
+    height: 100%;
+    width: 50%;
+    position: relative;
+    white-space: nowrap;
+    overflow-x: auto;
+
+}
+
+div#right::-webkit-scrollbar {
+    display: none;
+}
+
+div.ele {
+    margin-top: 60px;
+
+    height: 420px;
+    width: 250px;
+    background-color: #ffffff;
+    position: relative;
+    border-radius: 10px;
+    filter: drop-shadow(5px 5px 10px black);
+    display: inline-block;
+    margin-right: 10px;
+}
+
+div.ele img {
+    position: absolute;
+    height: 60%;
+    top: 9%;
+    width: 100%;
+    object-fit: cover;
+
+
+}
+
+div.ele h4 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #D0D4D5;
+    padding: 12px 20px;
+    border-radius: 6px;
+
+}
+
+div.ele h5 {
+
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    background-color: #373838;
+    color: whitesmoke;
+    font-size: 13px;
+    padding: 12px 20px;
+    border-radius: 6px;
+}
+
+div#acf {
+    background-color: #D0D4D5;
+
+}
+
+
+section#about h1 {
+    text-align: center;
+    text-decoration: underline wavy;
+}
+
+section#about p {
+    margin: 20px;
+
+    font-size: larger;
+}
+
+section#about img#first {
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+
+section#about img#sec {
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    float: right;
+}
+
+section#about img#third {
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+
+section#contact {
+    margin: 10px;
+}
+
+section#contact h1 {
+    text-align: center;
+    text-decoration: underline wavy;
+}
+
+section#contact label {
+    font-size: large;
+    font-weight: 500;
+
+}
+
+section#contact ::placeholder {
+    font-size: large;
+}
+
+section#contact input#name {
+    width: 85%;
+    padding: 10px 20px;
+}
+
+section#contact input#email {
+    width: 85%;
+    padding: 10px 20px;
+}
+
+section#contact textarea {
+    width: 96%;
+    padding: 10px 20px;
+}
+
+section#contact input#sub {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #54adca;
+    ;
+    color: whitesmoke;
+    border: none;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 10px;
+}
+
+section#contact input#sub:hover {
+    background-color: #008CBA;
+    ;
+}
+
+section#contact input#res {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #8a8a8a;
+    color: whitesmoke;
+    border: none;
+    font-size: large;
+    border-radius: 10px;
+}
+
+section#contact input#res:hover {
+    background-color: #474747;
+}
+
+section#footer {
+    background-color: black;
+    color: whitesmoke;
+}
+
+section#footer div.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+}
+section#footer div.container1 p:hover {
+    text-decoration: underline;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+section#footer div.container2 a {
+    text-decoration: none;
+    color: #9e9d9d;
+}
+
+section#footer div.container2 a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+section#footer div.container3 a {
+    text-decoration: none;
+    color: #9e9d9d;
+}
+
+section#footer div.container3 a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+section#footer div.container4 div#inside i {
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+section#footer div#end {
+    display: flex;
+    justify-content: space-around;
+}
+
+section#footer div#end a {
+    text-decoration: none;
+    color: #9e9d9d
+}
+
+section#footer div#end a:hover {
+    color: whitesmoke;
+    text-decoration: underline;
+}
